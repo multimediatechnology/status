@@ -1,0 +1,43 @@
+name: mediaCUBE Status
+description: Status of information services
+meta_description: "Status of information services"
+
+aboutPage: false
+
+markdown: redcarpet
+highlighter: pygments
+
+paginate: 20
+baseurl: /
+domain_name: 'https://status.mediacube.at'
+google_analytics: 'UA-XXXXXXXX-X'
+disqus: true
+disqus_shortname: 'mmt-status'
+
+# Details for the RSS feed generator
+url:            'https://status.mediacube.at'
+author:         'mediaCUBE Status'
+authorTwitter:  'eliias'
+
+permalink:       /:year/:title/
+
+defaults:
+    -
+        scope:
+            path: "" # empty string for all files
+            type: pages
+        values:
+            layout: default
+    -
+        scope:
+            path: "" # empty string for all files
+            type: posts
+        values:
+            layout: post
+    -
+        scope:
+            path: ""
+            type: drafts
+        values:
+            layout: post
+
